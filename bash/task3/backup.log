@@ -1,10 +1,8 @@
-[02-11-2022 17:53:23] <CREATED> directory source/
-[02-11-2022 18:02:43] <CREATED> file source/file4.txt
-[02-11-2022 18:03:16] <UPDATED> source/file4.txt
-[02-11-2022 18:03:50] <UPDATED> source/file4.txt
-[02-11-2022 18:05:10] <DELETED> source/file4.txt
-[02-11-2022 18:07:57] <CREATED> file source/folder2/file.txt
-[02-11-2022 18:07:27] <CREATED> directory source/folder1/
-[02-11-2022 18:07:51] <CREATED> directory source/folder2/
-[02-11-2022 18:08:53] <UPDATED> source/folder2/file.txt
-[02-11-2022 18:09:27] <UPDATED> source/folder2/file.txt
+[06-11-2022 16:23:08] <CREATED> directory source/folder1/
+[06-11-2022 16:23:08] <CREATED> file source/folder1/myfile.txt
+[06-11-2022 16:23:08] <CREATED> directory source/
+[06-11-2022 16:23:43] <UPDATED> source/folder1/myfile.txt
+[06-11-2022 16:33:01] <UPDATED> source/folder1/myfile.txt
+[06-11-2022 16:35:01] <DELETED> source/folder1/myfile.txt
+[06-11-2022 17:03:01] <CREATED> file source/folder1/crontest_file.txt
+[06-11-2022 17:05:02] <UPDATED> source/folder1/crontest_file.txt
