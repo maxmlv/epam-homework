@@ -1,6 +1,8 @@
 # Part 2 of the Database homework
 
-1. Make backup of your database.
+## Backup restore database and trasfering local database to AWS RDS
+
+10. Make backup of your database.
 
 [computer_constructor_backup.sql](computer_constructor_backup.sql)
 ```
@@ -8,7 +10,7 @@ maxmlv@maxmlv:~/epam$ mysqldump -u root -p computer_constructor > ~/epam/databas
 Enter password:
 ```
 
-2. Delete the table and/or part of the data in the table.
+11. Delete the table and/or part of the data in the table.
 
 Changes table table __gpu__ in database
 ```
@@ -60,7 +62,7 @@ mysql> select * from gpu;
 5 rows in set (0.00 sec)
 ```
 
-3. Transfer your local database to RDS AWS.
+13. Transfer your local database to RDS AWS.
 
 Compress backup file
 ```

@@ -1,5 +1,7 @@
 # Part 1 of the Database task
 
+## Working with MySQL on locl machine
+
 1. Download MySQL server for your OS on VM.
 2. Install MySQL server on VM.
 
