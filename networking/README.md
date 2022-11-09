@@ -16,6 +16,7 @@
 As you might see, __Server-1__ is running on Ubuntu. This is give a way to configure settings for network interfaces with __netplan__ starting with __Ubuntu 17.10 Artful__.
 
 __/etc/netplan/*.yaml__
+
 ![Server-1 interfaces](server_1_interfaces.png)
 
 After interfaces have been configured changes to interfaces in __netplan__ YAML file, we can apply changes with:
@@ -28,14 +29,19 @@ This is will also restart network service.
 
 2. Set up DHCP server on Server-1 which will configure IP addresses Int1 for Client-1 and Client-2.
 
-/etc/dhcp/dhcpd.conf
+__/etc/dhcp/dhcpd.conf__
+
 ![Server-1 DHCP server](server_1_dhcp_config.png)
 
-/etc/default/isc-dhcp-server
+__/etc/default/isc-dhcp-server__
+
 ![Server-1 DHCP interfaces](server_1_dhcp_interfaces.png)
 
-Client-1
+__Client-1__
+
 ![Client-1 IP addresses](client_1_ips.png)
-Client-2
+
+__Client-2__
+
 ![Client-2 IP addresses](client_2_ips.png)
 
