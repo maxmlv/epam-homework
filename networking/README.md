@@ -28,14 +28,14 @@ This is will also restart network service.
 
 2. Set up DHCP server on Server-1 which will configure IP addresses Int1 for Client-1 and Client-2.
 
-__/etc/dhcp/dhcpd.conf__
+/etc/dhcp/dhcpd.conf
 ![Server-1 DHCP server](server_1_dhcp_config.png)
 
-__/etc/default/isc-dhcp-server__
+/etc/default/isc-dhcp-server
 ![Server-1 DHCP interfaces](server_1_dhcp_interfaces.png)
 
-__Client-1__
+Client-1
 ![Client-1 IP addresses](client_1_ips.png)
-__Client-2__
+Client-2
 ![Client-2 IP addresses](client_2_ips.png)
 
