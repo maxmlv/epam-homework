@@ -94,3 +94,27 @@ Adding route from __Client-2__ to __Client-1__ via __Net4__ network:
 Test connection:
 
 ![Client-2 checks via Net4](traceroute_c2_net4.png)
+
+5. Calculate summarizing for networks __172.17.13.0/24__ and __172.17.23.0/24__. Configure routing for summarized network via __Server-1__.
+
+Summarizing:
+
+![Summarizing](summarizing.png)
+
+Replacing old IP addresses in __lo__ interface with new in summarized network:
+
+![Client-1 summ IP addresses](summ_ip_c1.png)
+
+Configuring route for to summarized network __172.17.0.0/19__ via __Server-1__
+
+__Client-2 route__
+
+![Client-2 route to summ](summ_route_c2_s1.png)
+
+__Server-1 route__
+
+![Server-1 route to summ](summ_route_s1_c1.png)
+
+Check connection with ping and traceroute from __Client-2__ to __172.17.0.0/19__ network:
+
+![Client-2 summ check](summ_traceroute_c2.png)
