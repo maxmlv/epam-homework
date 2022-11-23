@@ -99,7 +99,7 @@ Test connection:
 
 Summarizing:
 
-![Summarizing](summarizing.png)
+![Summarizing](summarizing_v2.png)
 
 Replacing old IP addresses in __lo__ interface with new in summarized network:
 
