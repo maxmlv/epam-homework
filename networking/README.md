@@ -118,3 +118,50 @@ __Server-1 route__
 Check connection with ping and traceroute from __Client-2__ to __172.17.0.0/19__ network:
 
 ![Client-2 summ check](summ_traceroute_c2.png)
+
+6. Sett up __ssh__ connection on __Client-1__ and __Client-2__ to __Server-1__ and between each other.
+
+After creating keys with __ssh-keygen__ on each machine we need to copy public keys to servers that we want to connect to:
+
+```
+[client-1@client-1 ~]$ ssh-copy-id -i client1_key.pub server-1@10.99.3.1
+[client-1@client-1 ~]$ ssh-copy-id -i client1_key.pub client-2@172.16.3.2
+
+-------------
+
+client-2@client-2:~$ ssh-copy-id -i client2_key.pub server-1@10.2.99.1
+client-2@client-2:~$ ssh-copy-id -i client2_key.pub client-1@172.16.3.1
+```
+
+Now we can connect to machines with ssh:
+
+From __Client-1__
+
+![Client-1 to Server-1 ssh](ssh_c1_s1.png)
+
+![Client-1 to Client-2 ssh](ssh_c1_c2.png)
+
+From __Client-2__
+
+![Client-2 to Server-1 ssh](ssh_c2_s1.png)
+
+![Client-2 to Client-1 ssh](ssh_c2_c1.png)
+
+7. Configure __Firewall__ on __Server-1__:
+
+    - Allow __ssh__ connection from __Client-1__ and deny from __Client-2__.
+    - __Client-2__ can connect with __ping__ command to __172.17.D+10.1__, but can't to __172.17.D+20.1__.
+
+__iptables__ configuration on __Server-1__
+
+![Server-1 iptables](firewall_server_1.png)
+
+Check __ssh__ connectivity
+
+![Client-1 firewall ssh](firewall_c1_ssh.png)
+
+![Client-2 firewall ssh](firewall_c2_ssh.png)
+
+Check __ping__ connection
+
+![Client-2 firewall ping](firewall_c2_ping.png)
