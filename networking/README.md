@@ -2,7 +2,7 @@
 
 ![Network schema](screenshots/network_vm_plan.png)
 
-## Subnets:
+## Networks:
 - Net1 - 192.168.3.0/24
 - Net2 - 10.99.3.0/24
 - Net3 - 10.2.99.0/24
