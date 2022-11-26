@@ -4,6 +4,16 @@
 
 [All steps of the task in .pdf file](Task_Linux_Net.pdf)
 
+## Task
+
+1. [Static IP](#static_ips)
+2. [DHCP Server](#dhcp_server)
+3. [Check connection](#check_conn)
+4. [Routing](#routing)
+5. [Summarizing](#summarizing)
+6. [SSH](#ssh)
+7. [Firewall](#firewall)
+
 ## Networks:
 - Net1 - 192.168.3.0/24
 - Net2 - 10.99.3.0/24
@@ -11,9 +21,8 @@
 - Net4 - 172.16.3.0/24
 
 ---
-## Task
 
-1. Configure static IP addresses on all network interfaces for Server-1.
+1. Configure static IP addresses on all network interfaces for Server-1. <a name="static_ips"></a>
 
 As you might see, __Server-1__ is running on Ubuntu. This is give a way to configure settings for network interfaces with __netplan__ starting with __Ubuntu 17.10 Artful__.
 
@@ -31,7 +40,7 @@ sudo netplan apply
 
 This is will also restart network service.
 
-2. Set up DHCP server on Server-1 which will configure IP addresses Int1 for Client-1 and Client-2.
+2. Set up DHCP server on Server-1 which will configure IP addresses Int1 for Client-1 and Client-2. <a name="dhcp_server"></a>
 
 __/etc/dhcp/dhcpd.conf__
 
@@ -49,7 +58,7 @@ __Client-2__
 
 ![Client-2 IP addresses](screenshots/client_2_ips.png)
 
-3. With __ping__ and __traceroute__ commands check the connection between virtual machines.
+3. With __ping__ and __traceroute__ commands check the connection between virtual machines. <a name="check_conn"></a>
 
 __Server-1__
 
@@ -63,7 +72,7 @@ __Client-2__
 
 ![Client-2 ping check](screenshots/client_2_ping.png)
 
-4. Initialize two IP addresses __172.17.D+10.1/24__ and __172.17.D+20.1/24__ to __lo__ interface on __Client-1__. Configure routing on __Client-2__ machine that way: 
+4. Initialize two IP addresses __172.17.D+10.1/24__ and __172.17.D+20.1/24__ to __lo__ interface on __Client-1__. Configure routing on __Client-2__ machine that way: <a name="routing"></a>
 
 __Client-2 -> Server-1 -> 172.17.D+10.1__
 
@@ -97,7 +106,7 @@ Test connection:
 
 ![Client-2 checks via Net4](screenshots/traceroute_c2_net4.png)
 
-5. Calculate summarizing for networks __172.17.13.0/24__ and __172.17.23.0/24__. Configure routing for summarized network via __Server-1__.
+5. Calculate summarizing for networks __172.17.13.0/24__ and __172.17.23.0/24__. Configure routing for summarized network via __Server-1__. <a name="summarizing"></a>
 
 Summarizing:
 
@@ -121,7 +130,7 @@ Check connection with ping and traceroute from __Client-2__ to __172.17.0.0/19__
 
 ![Client-2 summ check](screenshots/summ_traceroute_c2.png)
 
-6. Sett up __ssh__ connection on __Client-1__ and __Client-2__ to __Server-1__ and between each other.
+6. Sett up __ssh__ connection on __Client-1__ and __Client-2__ to __Server-1__ and between each other. <a name="ssh"></a>
 
 After creating keys with __ssh-keygen__ on each machine we need to copy public keys to servers that we want to connect to:
 
@@ -149,7 +158,7 @@ From __Client-2__
 
 ![Client-2 to Client-1 ssh](screenshots/ssh_c2_c1.png)
 
-7. Configure __Firewall__ on __Server-1__:
+7. Configure __Firewall__ on __Server-1__: <a name="firewall"></a>
 
     - Allow __ssh__ connection from __Client-1__ and deny from __Client-2__.
     - __Client-2__ can connect with __ping__ command to __172.17.D+10.1__, but can't to __172.17.D+20.1__.
