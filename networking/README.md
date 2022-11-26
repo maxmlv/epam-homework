@@ -2,6 +2,8 @@
 
 ![Network schema](screenshots/network_vm_plan.png)
 
+[All steps of the task in .pdf file](Task_Linux_Net.pdf)
+
 ## Networks:
 - Net1 - 192.168.3.0/24
 - Net2 - 10.99.3.0/24
