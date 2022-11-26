@@ -72,7 +72,7 @@ __Client-2__
 
 ![Client-2 ping check](screenshots/client_2_ping.png)
 
-4. Initialize two IP addresses __172.17.D+10.1/24__ and __172.17.D+20.1/24__ to __lo__ interface on __Client-1__. Configure routing on __Client-2__ machine that way: <a name="routing"></a>
+4. Initialize two IP addresses __172.17.D+10.1/24__ and __172.17.D <a name="routing"></a> +20.1/24__ to __lo__ interface on __Client-1__. Configure routing on __Client-2__ machine that way: 
 
 __Client-2 -> Server-1 -> 172.17.D+10.1__
 
