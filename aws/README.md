@@ -2,20 +2,30 @@
 
 [AWS task](TaskAWS_updated_links.pdf)
 
+## Task
+
+- [EC2](#ec2)
+- [EBS](#ebs)
+- [Route53](#route53)
+- [Lightsail](#lightsail)
+- [S3](#s3)
+- [ECS](#ecs)
+- [Lambda](#lambda)
+- [Static Website](#static-website)
 
 
-## EC2
+## EC2 <a name="ec2"></a>
 
-## EBS
+## EBS <a name="ebs"></a>
 
-## Route53
+## Route53 <a name="route53"></a>
 
-## Lightsail
+## Lightsail <a name="lightsail"></a>
 
-## S3
+## S3 <a name="s3"></a>
 
-## ECS
+## ECS <a name="ecs"></a>
 
-## Lambda
+## Lambda <a name="lambda"></a>
 
-## Static website
+## Static website <a name="static_website"></a>
