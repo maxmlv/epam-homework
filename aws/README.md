@@ -119,6 +119,18 @@ Delete files
 
 ## ECS <a name="ecs"></a>
 
+Successful ECS cluster created.
+
+![ECS create cluster](screenshots/ecs1.png)
+
+Go to web page via Load balanser DNS name.
+
+![Target group](screenshots/ecs2.png)
+
+![Load balanser](screenshots/ecs3.png)
+
+![ECS web page](screenshots/ecs4.png)
+
 ## Lambda <a name="lambda"></a>
 
 ## Static website <a name="static_website"></a>
