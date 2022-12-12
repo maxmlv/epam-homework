@@ -75,6 +75,10 @@ Now we can detach Disk_D volume from Web Server and attach it to Web Server 2 an
 
 ## Lightsail <a name="lightsail"></a>
 
+![Lightsail launch instance](screenshots/lightsail1.png)
+
+![Lightsail Wordpress web page](screenshots/lightsail2.png)
+
 ## S3 <a name="s3"></a>
 
 ## ECS <a name="ecs"></a>
