@@ -81,6 +81,8 @@ Now we can detach Disk_D volume from Web Server and attach it to Web Server 2 an
 
 ## S3 <a name="s3"></a>
 
+### Management Console
+
 First we need to create S3 bucket where objects will be stored.
 
 ![S3 create bucket](screenshots/s3_console1.png)
@@ -92,6 +94,28 @@ After we created S3 bucket we can upload objects.
 To retrieve objects we need to choose desired and download it.
 
 ![S3 download image](screenshots/s3_console3.png)
+
+### AWS CLI
+
+After installing __AWS CLI__ on my local machine I configured AWS credentials with ```aws configure``` with access and secret key that I generated earlier for my IAM user.
+
+![IAM user](screenshots/s3_cli1.png)
+
+Create bucket
+
+![AWS CLI create bucket](screenshots/s3_cli2.png)
+
+Upload files
+
+![AWS CLI upload files](screenshots/s3_cli3.png)
+
+Download files
+
+![AWS CLI download files](screenshots/s3_cli4.png)
+
+Delete files
+
+![AWS CLI delete files](screenshots/s3_cli5.png)
 
 ## ECS <a name="ecs"></a>
 
