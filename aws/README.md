@@ -6,7 +6,6 @@
 
 - [EC2](#ec2)
 - [EBS](#ebs)
-- [Route53](#route53)
 - [Lightsail](#lightsail)
 - [S3](#s3)
 - [ECS](#ecs)
@@ -73,8 +72,6 @@ Now we can detach Disk_D volume from Web Server and attach it to Web Server 2 an
 > To check if the EBS volume has mounted proparly I use ```lsblk -f``` to see if the volume has the desired mountpoint.
 
 ![Web Server 2 mount Disk_D](screenshots/diskd_mount3.png)
-
-## Route53 <a name="route53"></a>
 
 ## Lightsail <a name="lightsail"></a>
 
