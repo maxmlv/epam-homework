@@ -81,6 +81,18 @@ Now we can detach Disk_D volume from Web Server and attach it to Web Server 2 an
 
 ## S3 <a name="s3"></a>
 
+First we need to create S3 bucket where objects will be stored.
+
+![S3 create bucket](screenshots/s3_console1.png)
+
+After we created S3 bucket we can upload objects.
+
+![S3 upload image](screenshots/s3_console2.png)
+
+To retrieve objects we need to choose desired and download it.
+
+![S3 download image](screenshots/s3_console3.png)
+
 ## ECS <a name="ecs"></a>
 
 ## Lambda <a name="lambda"></a>
