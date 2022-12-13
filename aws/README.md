@@ -10,7 +10,7 @@
 - [S3](#s3)
 - [ECS](#ecs)
 - [Lambda](#lambda)
-- [Static Website](#static-website)
+- [Static Website](#static_website)
 
 
 ## EC2 <a name="ec2"></a>
