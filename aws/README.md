@@ -133,4 +133,39 @@ Go to web page via Load balanser DNS name.
 
 ## Lambda <a name="lambda"></a>
 
+Created a Lambda function
+
+![Lambda create function](screenshots/lambda1.png)
+
+Created event
+
+![Lambda create event](screenshots/lambda2.png)
+
+Run function
+
+![Lambda run function](screenshots/lambda3.png)
+
+
 ## Static website <a name="static_website"></a>
+
+### [maxmlvk.cloud](https://maxmlvk.cloud)
+
+Domain name I registered via [GoDaddy](https://www.godaddy.com).
+
+### S3
+
+![S3 buckets](screenshots/static_website1.png)
+
+### ACM
+
+![Certificate](screenshots/static_website2.png)
+
+### Cloudfront
+
+![Cloudfront distributions](screenshots/static_website3.png)
+
+### Route53 Hosted Zone
+
+![Route53 hosted zone](screenshots/static_website4.png)
+
+ 
